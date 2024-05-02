@@ -858,11 +858,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: 479edbcc-5115-49cc-94a7-2455de537fed
+  cloudProjectId: ef8f9294-d226-46fe-9fd8-0bbed2417520
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Echo Chamber 2024-04-25_21-22-53
-  organizationId: shaunleochan
+  projectName: SD3985_Group2_Project 2024-03-21_00-06-08
+  organizationId: pavosv
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
