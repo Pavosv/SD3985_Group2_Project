@@ -19,7 +19,7 @@ public class EnemyBulletScript : MonoBehaviour
         rb.velocity = new Vector2(direction.x, direction.y).normalized * bulletSpeed; //Normalize so that the bullet will not change speed regardless if cursor is far
 
         float rot = Mathf.Atan2(-direction.y, -direction.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(0, 0, rot + 90);
+        transform.rotation = Quaternion.Euler(0, 0, rot);
     }
 
     // Update is called once per frame
