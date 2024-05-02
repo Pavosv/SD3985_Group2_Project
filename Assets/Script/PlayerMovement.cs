@@ -6,39 +6,67 @@ public class PlayerMovement : MonoBehaviour
 {
     public float speed;
     public float jumpForce;
-    public Sprite mikaFW;
-    public Sprite mikaDW;
+    private bool isJumping = false;
+    //public GameObject jumpingCollider;
 
     private Rigidbody2D rb;
-    private SpriteRenderer spriteRenderer;
-
+    //private Rigidbody2D jumpCollider;
     private float horizontal;
     private float vertical;
+    private float jump;
 
+    // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        rb = gameObject.GetComponent<Rigidbody2D>();
+        //jumpCollider = jumpingCollider.GetComponent<Rigidbody2D>();
+
     }
 
+    // Update is called once per frame
     void Update()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical");
+        //jump = Input.GetAxisRaw("Jump");
+    }
 
-        if (vertical < -0.1f || horizontal < -0.1f) 
+    private void FixedUpdate()
+    {
+        if (horizontal > 0.1f || horizontal < -0.1f)
         {
-            spriteRenderer.sprite = mikaDW;
+            rb.AddForce(new Vector2(horizontal * speed, 0f), ForceMode2D.Impulse);
         }
-        else
+        if (vertical > 0.1f || vertical < -0.1f)
         {
-            spriteRenderer.sprite = mikaFW;
+            rb.AddForce(new Vector2(0f, vertical * speed), ForceMode2D.Impulse);
         }
+        /*
+        if (jump > 0.1f && !isJumping)
+        {
+            rb.AddForce(new Vector2(0f, jump * jumpForce), ForceMode2D.Impulse);
+        }
+        */
 
     }
 
-    void FixedUpdate()
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        rb.velocity = new Vector2(horizontal * speed, vertical * speed);
+        /*
+        if (collision.gameObject.tag == "Platform") //Prevent double jumping
+        {
+            isJumping = false;
+        }
+        */
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        /*
+        if (collision.gameObject.tag == "Platform")
+        {
+            isJumping = true;
+        }
+        */
     }
 }

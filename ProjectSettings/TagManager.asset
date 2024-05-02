@@ -4,12 +4,13 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Platform
   - Enemy
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Score
+  - 
   - Water
   - UI
   - 
@@ -41,7 +42,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: uiElement
-    uniqueID: 4260122047
     locked: 0

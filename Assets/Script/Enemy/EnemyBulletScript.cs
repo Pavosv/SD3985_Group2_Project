@@ -37,7 +37,7 @@ public class EnemyBulletScript : MonoBehaviour
         {
             Debug.Log("Collided");
             Destroy(gameObject);
-            other.gameObject.GetComponent<PlayerHealth>().UpdateHP(-bulletDamage);
+            other.gameObject.GetComponent<PlayerHealth>().updateHP(-bulletDamage);
         }
     }
 }
