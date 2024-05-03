@@ -9,13 +9,11 @@ public class EnemyShooting : MonoBehaviour
     public int damage = 1;
     public float fireRate = 2;
 
-    public float beatTempo;
-
     private float timer;
     // Start is called before the first frame update
     void Start()
     {
-        beatTempo = beatTempo / 60f;
+
     }
 
     // Update is called once per frame
