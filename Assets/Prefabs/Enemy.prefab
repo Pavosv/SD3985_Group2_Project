@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 2569686765657812896}
   - component: {fileID: 305079002421808151}
   - component: {fileID: 1651604134832943911}
+  - component: {fileID: 447526293084527453}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -62,8 +63,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.02, y: 2.48, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 7685579717222264305}
   m_Father: {fileID: 0}
@@ -109,12 +110,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 1399615073, guid: 6c824ea65276e4785b996bdaca5aaddb, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 6.87, y: 9.9}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -152,8 +153,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 1}
+  m_Offset: {x: -0.08669734, y: 0.11559427}
+  m_Size: {x: 7.068751, y: 9.900843}
   m_Direction: 0
 --- !u!61 &2569686765657812896
 BoxCollider2D:
@@ -191,14 +192,14 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 6.87, y: 9.9}
+    newSize: {x: 6.87, y: 9.9}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 6.87, y: 9.9}
   m_EdgeRadius: 0
 --- !u!50 &305079002421808151
 Rigidbody2D:
@@ -239,8 +240,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 125fc12030b5ead42b67923c715a3a71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 7010644385786507557, guid: 6bcf95e57a3aefb4abb9cfb7bc271464, type: 3}
+  directionalBullet: {fileID: 7010644385786507557, guid: 6bcf95e57a3aefb4abb9cfb7bc271464, type: 3}
+  bidirectionalBullet: {fileID: 1138836704827273468, guid: f2cad46364e8d58438e4abcceca895ac, type: 3}
   bulletpos: {fileID: 7685579717222264305}
-  damage: 1
-  fireRate: 0.5
-  beatTempo: 0
+  bulletDamage: 1
+  bulletSpeed: 5
+  numberOfRadialBullet: 10
+--- !u!114 &447526293084527453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3375213455548252799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96a04e311fcb1ce4fb35a825fc81673f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  moveSpots:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

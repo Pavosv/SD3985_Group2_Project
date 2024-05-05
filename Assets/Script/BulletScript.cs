@@ -34,7 +34,7 @@ public class BulletScript : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        //Debug.Log("Projectile Collision with " + collision.gameObject);
+        Debug.Log("Projectile Collision with " + collision.gameObject);
         Destroy(gameObject);
         ScoreScript.scoreValue += 10;
     }
