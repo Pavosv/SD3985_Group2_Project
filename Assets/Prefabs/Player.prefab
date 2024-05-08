@@ -80,6 +80,7 @@ MonoBehaviour:
   bulletTransform: {fileID: 7409137362942613420}
   canFire: 1
   timeBetweenFiring: 0.1
+  damage: 10
 --- !u!1 &1878593252832018862
 GameObject:
   m_ObjectHideFlags: 0
@@ -306,7 +307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b575ad7b1b5e7fa40b5701f0b8a6bbb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 5
+  maxHP: 10
   currentHP: 0
   healthBar: {fileID: 0}
 --- !u!114 &4062015806700789204

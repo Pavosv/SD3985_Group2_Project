@@ -8,6 +8,7 @@ public class BulletScript : MonoBehaviour
     private Camera mainCamera;
     private Rigidbody2D rb;
     public float bulletSpeed;
+    public int damage;
 
     // Start is called before the first frame update
     void Start()
@@ -34,8 +35,7 @@ public class BulletScript : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Projectile Collision with " + collision.gameObject);
         Destroy(gameObject);
-        ScoreScript.scoreValue += 10;
+        ScoreScript.scoreValue += damage;
     }
 }

@@ -44,7 +44,6 @@ GameObject:
   - component: {fileID: 91420884332812195}
   - component: {fileID: 2569686765657812896}
   - component: {fileID: 305079002421808151}
-  - component: {fileID: 1651604134832943911}
   - component: {fileID: 447526293084527453}
   m_Layer: 0
   m_Name: Enemy
@@ -228,24 +227,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &1651604134832943911
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3375213455548252799}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 125fc12030b5ead42b67923c715a3a71, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  directionalBullet: {fileID: 7010644385786507557, guid: 6bcf95e57a3aefb4abb9cfb7bc271464, type: 3}
-  bidirectionalBullet: {fileID: 1138836704827273468, guid: f2cad46364e8d58438e4abcceca895ac, type: 3}
-  bulletpos: {fileID: 7685579717222264305}
-  bulletDamage: 1
-  bulletSpeed: 5
-  numberOfRadialBullet: 10
 --- !u!114 &447526293084527453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -258,7 +239,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96a04e311fcb1ce4fb35a825fc81673f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 5
   moveSpots:
   - {fileID: 0}
   - {fileID: 0}
