@@ -11,6 +11,9 @@ public class Player : MonoBehaviour
     public bool canFire;
     private float timer;
     public float timeBetweenFiring;
+
+    public int damage = 10;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,7 +42,8 @@ public class Player : MonoBehaviour
         if (Input.GetMouseButton(0) && canFire)
         {
             canFire = false;
-            Instantiate(bullet, bulletTransform.position, Quaternion.identity);
+            GameObject instantiatedBullet = Instantiate(bullet, bulletTransform.position, Quaternion.identity);
+            instantiatedBullet.GetComponent<BulletScript>().damage = damage;
         }
     }
 }

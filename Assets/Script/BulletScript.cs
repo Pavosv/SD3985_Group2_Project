@@ -8,6 +8,7 @@ public class BulletScript : MonoBehaviour
     private Camera mainCamera;
     private Rigidbody2D rb;
     public float bulletSpeed;
+    public int damage;
 
     // Start is called before the first frame update
     void Start()
@@ -20,7 +21,7 @@ public class BulletScript : MonoBehaviour
         Vector3 rotation = transform.position - mousePosition;
         rb.velocity = new Vector2(direction.x, direction.y).normalized * bulletSpeed; //Normalize so that the bullet will not change speed regardless if cursor is far
         float rot = Mathf.Atan2(rotation.y, rotation.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(0, 0, rot + 90);
+        transform.rotation = Quaternion.Euler(0, 0, rot + 180);
     }
 
     // Update is called once per frame
@@ -34,8 +35,7 @@ public class BulletScript : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Projectile Collision with " + collision.gameObject);
         Destroy(gameObject);
-        ScoreScript.scoreValue += 10;
+        ScoreScript.scoreValue += damage;
     }
 }
