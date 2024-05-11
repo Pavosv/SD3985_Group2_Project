@@ -1,0 +1,26 @@
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.Video;
+
+public class VideoPlayerController : MonoBehaviour
+{
+    public VideoPlayer videoPlayer;
+
+    void Start()
+    {
+        videoPlayer.loopPointReached += OnVideoEnd;
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            OnVideoEnd(videoPlayer);
+        }
+    }
+
+    void OnVideoEnd(VideoPlayer vp)
+    {
+        SceneManager.LoadScene("YourNextSceneName");
+    }
+}
