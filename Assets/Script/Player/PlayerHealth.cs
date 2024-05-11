@@ -7,6 +7,7 @@ public class PlayerHealth : MonoBehaviour
     public int maxHP = 5;
     public int currentHP;
     public HealthBar healthBar;
+    
 
     private int previousSceneIndex;
 
@@ -33,6 +34,14 @@ public class PlayerHealth : MonoBehaviour
         currentHP += value;
         healthBar.UpdateHealthBar(currentHP);
         //Debug.Log(currentHP + "/" + maxHP);
+    }
+
+    public void OnTriggerEnter2D(Collider2D col){
+        if (col.gameObject.CompareTag("Enemy")){
+            UpdateHP(-1);
+            //Debug.Log(currentHP + "/" + maxHP);
+        }
+
     }
 
     void GameOver()
