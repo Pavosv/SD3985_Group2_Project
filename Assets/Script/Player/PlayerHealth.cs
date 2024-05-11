@@ -32,7 +32,7 @@ public class PlayerHealth : MonoBehaviour
     {
         currentHP += value;
         healthBar.UpdateHealthBar(currentHP);
-        Debug.Log(currentHP + "/" + maxHP);
+        //Debug.Log(currentHP + "/" + maxHP);
     }
 
     void GameOver()
