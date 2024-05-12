@@ -11,7 +11,7 @@ public class WinCondition : MonoBehaviour
     public AudioSource backgroundMusic; // Assign your music source in the Inspector
     public int winScore = 5000; // Set your score criteria for winning the game
     public int levelNumber = 1;
-    public float countDown = 5.0f;
+    public float countDown = 2.0f;
     private bool isChecking = false;
 
     void Update()
@@ -63,5 +63,6 @@ public class WinCondition : MonoBehaviour
     {
         // Load the game over scene
         Debug.Log("Game Over");
+        SceneManager.LoadSceneAsync(2);
     }
 }

@@ -43,6 +43,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: player
+    uniqueID: 4085041635
+    locked: 0
+  - name: sprites
+    uniqueID: 979806743
+    locked: 0
   - name: uiElement
     uniqueID: 4260122047
     locked: 0
