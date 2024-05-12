@@ -1343,7 +1343,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.4392157, g: 0.4392157, b: 0.4392157, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3048,7 +3048,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 156.89, y: 419.6}
+  m_AnchoredPosition: {x: 156.89001, y: 419.6}
   m_SizeDelta: {x: 142.38, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2045605509
@@ -3096,9 +3096,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 5
+  m_MaxValue: 30
   m_WholeNumbers: 1
-  m_Value: 5
+  m_Value: 30
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -3605,9 +3605,29 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 3932867107832398851, guid: 94361bbd5d7677c449cb3a4cef630c57, type: 3}
+      propertyPath: maxHP
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3932867107832398851, guid: 94361bbd5d7677c449cb3a4cef630c57, type: 3}
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 2045605510}
+    - target: {fileID: 4862858052224441664, guid: 94361bbd5d7677c449cb3a4cef630c57, type: 3}
+      propertyPath: m_Size.x
+      value: 7.693014
+      objectReference: {fileID: 0}
+    - target: {fileID: 4862858052224441664, guid: 94361bbd5d7677c449cb3a4cef630c57, type: 3}
+      propertyPath: m_Size.y
+      value: 11.579289
+      objectReference: {fileID: 0}
+    - target: {fileID: 4862858052224441664, guid: 94361bbd5d7677c449cb3a4cef630c57, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.0000023841858
+      objectReference: {fileID: 0}
+    - target: {fileID: 4862858052224441664, guid: 94361bbd5d7677c449cb3a4cef630c57, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.026986003
+      objectReference: {fileID: 0}
     - target: {fileID: 7485658236820581390, guid: 94361bbd5d7677c449cb3a4cef630c57, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7

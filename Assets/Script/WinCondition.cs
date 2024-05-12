@@ -52,12 +52,9 @@ public class WinCondition : MonoBehaviour
 
     public void WinGame()
     {
+        
         // Load the winning screen
         Debug.Log("You won");
-<<<<<<< Updated upstream
-=======
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
->>>>>>> Stashed changes
     }
 
     public void LoseGame()

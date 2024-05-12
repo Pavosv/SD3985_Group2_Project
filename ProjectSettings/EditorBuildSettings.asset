@@ -13,16 +13,16 @@ EditorBuildSettings:
     guid: dbb3e64b4bf8bc24c8a3e70f6848ee36
   - enabled: 1
     path: Assets/Scenes/lvl1.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    guid: abd3e8e371ee143b38e277099c9b0ca0
   - enabled: 1
     path: Assets/Scenes/finishMenu.unity
-    guid: cc75d766579b4eb48996decc2f4ad06f
+    guid: 39fb23a36d0584f3eaf500914ec84ced
   - enabled: 1
     path: Assets/Scenes/Main Menu2.unity
     guid: 0615bcdedfe784272b09e8e60a7e8ab1
   - enabled: 1
     path: Assets/Scenes/lvl2.unity
-    guid: b14d9199e4ea24ac38f7d63b86282afe
+    guid: 83f335dcfa6f04c4ea50a464248f652c
   - enabled: 1
     path: Assets/Scenes/finishMenu2.unity
     guid: e178b0e94a48941daa2d90499a09c440
@@ -31,7 +31,7 @@ EditorBuildSettings:
     guid: 609d960293166499fb558ea209bd8b2c
   - enabled: 1
     path: Assets/Scenes/lvl3.unity
-    guid: 9e10540267211486bb96cb80cac8d67f
+    guid: 26c308a26cd5b4ec08a104fcc7b5b4d9
   - enabled: 1
     path: Assets/Scenes/finishMenu3.unity
     guid: 1180bb81ad4be43628411efa8c2744e5
@@ -40,7 +40,7 @@ EditorBuildSettings:
     guid: bb0b55aab325e421395d5eeff280926e
   - enabled: 1
     path: Assets/Scenes/lvl4.unity
-    guid: 6d1636a4f53e44d2f9716c282672b8ba
+    guid: b2f799920f12c4e4fbb9c3b7d63b37ea
   - enabled: 1
     path: Assets/Scenes/finishMenu4.unity
     guid: d1ba3436d53034dc19a42509090b7a81
@@ -48,11 +48,6 @@ EditorBuildSettings:
     path: Assets/Scenes/gameOver.unity
     guid: a6052b5b13ce9444c8092c9dfb6d5b62
   - enabled: 1
-<<<<<<< Updated upstream
-    path: Assets/Scenes/lvl2.unity
-    guid: a22379aa1904943b0933cdad5e469ef7
-=======
     path: Assets/Scenes/ending.unity
-    guid: 9223d457c0caf4703aa12f9b0baf2be3
->>>>>>> Stashed changes
+    guid: 620f97eb7eca147dab06de6f8e0baaa4
   m_configObjects: {}
