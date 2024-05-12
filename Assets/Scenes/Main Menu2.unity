@@ -3907,7 +3907,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Work in Progress
+  m_text: Coming soon!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c39622f3d1d844289a78816ceff8dcc9, type: 2}
   m_sharedMaterial: {fileID: 1961788543197307601, guid: c39622f3d1d844289a78816ceff8dcc9, type: 2}

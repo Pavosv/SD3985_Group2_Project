@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class WinCondition : MonoBehaviour
 {
@@ -52,14 +53,15 @@ public class WinCondition : MonoBehaviour
 
     public void WinGame()
     {
-        
         // Load the winning screen
         Debug.Log("You won");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        
     }
 
     public void LoseGame()
     {
         // Load the game over scene
-        Debug.Log("Game Over");
+        SceneManager.LoadScene(13);
     }
 }
