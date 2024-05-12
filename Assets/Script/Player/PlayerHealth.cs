@@ -33,15 +33,20 @@ public class PlayerHealth : MonoBehaviour
     {
         currentHP += value;
         healthBar.UpdateHealthBar(currentHP);
-        //Debug.Log(currentHP + "/" + maxHP);
+        Debug.Log(currentHP + "/" + maxHP);
     }
 
     public void OnTriggerEnter2D(Collider2D col){
         if (col.gameObject.CompareTag("Enemy")){
             UpdateHP(-1);
-            //Debug.Log(currentHP + "/" + maxHP);
+            Debug.Log(currentHP + "/" + maxHP);
         }
-
+        else if (col.gameObject.CompareTag("Heal")){
+            if (currentHP != maxHP){
+                UpdateHP(1);
+                Debug.Log(currentHP + "/" + maxHP);
+            }
+        }
     }
 
     void GameOver()
