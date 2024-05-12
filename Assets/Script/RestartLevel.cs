@@ -16,4 +16,7 @@ public class RestartLevel : MonoBehaviour
     {
         SceneManager.LoadScene(previousSceneName);
     }
+    public void Home(){
+        SceneManager.LoadScene(0);
+    }
 }
