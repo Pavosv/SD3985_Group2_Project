@@ -3,20 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PauseMenu : MonoBehaviour
+public class GameOverHome : MonoBehaviour
 {
-    [SerializeField] GameObject pauseMenu;
+    [SerializeField] GameObject gameOverMenu;
     [SerializeField] ScoreScript scoreValue;
-    public void Pause(){
-        pauseMenu.SetActive(true);
-        Time.timeScale = 0;
+    void Start ()
+    {
+        
     }
     public void Home(){
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
-        Time.timeScale = 1;
-    }
-    public void Resume(){
-        pauseMenu.SetActive(false);
         Time.timeScale = 1;
     }
     public void Restart(){

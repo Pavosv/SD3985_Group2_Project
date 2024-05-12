@@ -37,7 +37,7 @@ public class PlayerHealth : MonoBehaviour
 
     void GameOver()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(13);
     }
 
     public void RestartGame()

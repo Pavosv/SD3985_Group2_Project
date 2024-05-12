@@ -5,15 +5,33 @@ using UnityEngine.SceneManagement;
 
 public class RestartLevel : MonoBehaviour
 {
-    private string previousSceneName;
+    private int previousSceneIndex;
+    private int requiredSceneIndex;
 
     void Start()
     {
-        previousSceneName = PlayerPrefs.GetString("PreviousScene");
+        previousSceneIndex = PlayerPrefs.GetInt("PreviousSceneIndex");
+        requiredSceneIndex = previousSceneIndex - 1;
+        Debug.Log("Previous Scene Index: " + previousSceneIndex);
     }
 
     public void Restart()
     {
-        SceneManager.LoadScene(previousSceneName);
+        SceneManager.LoadScene(previousSceneIndex);
     }
+<<<<<<< Updated upstream
+=======
+
+    public void Home()
+    {
+        if (requiredSceneIndex >= 0 && requiredSceneIndex < SceneManager.sceneCountInBuildSettings)
+        {
+            SceneManager.LoadScene(requiredSceneIndex);
+        }
+        else
+        {
+            Debug.LogWarning("Invalid scene index: " + requiredSceneIndex);
+        }
+    }
+>>>>>>> Stashed changes
 }
